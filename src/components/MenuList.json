@@ -1,0 +1,32 @@
+[
+    {
+        "text": "Home",
+        "type": "link",
+        "link": "#"
+    },
+    {
+        "text": "Who we are",
+        "type": "link",
+        "link": "#"
+    },
+    {
+        "text": "What we do",
+        "type": "link",
+        "link": "#"
+    },
+    {
+        "text": "Where we work",
+        "type": "link",
+        "link": "#"
+    },
+    {
+        "text": "Careers",
+        "type": "link",
+        "link": "#"
+    },
+    {
+        "text": "News",
+        "type": "link",
+        "link": "#"
+    }
+]
