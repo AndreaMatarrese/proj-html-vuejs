@@ -1,9 +1,9 @@
 <template>
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-main col-10 row row-cols-2
+  <div class="navbar position-fixed fixed-top">
+    <div class="navbar-main bg-transparent col-10 row row-cols-2
                 justify-content-between align-items-center
                 m-auto">
-      <img src="@/assets/images/logo_seo_1x.png" class="col-2" alt="logo-seo">
+      <img src="@/assets/images/logo_seo_w_2x.png" class="col-2" alt="logo-seo">
       <div class="menu-voice col-8 row">
         <ul class="list-group list-group-horizontal list-unstyled gap-3 align-items-center">
           <li v-for="item in arrMenu" :key="item.text">
@@ -34,7 +34,7 @@ export default {
 @import '@/assets/scssVariables.scss';
 a{
   text-decoration: none;
-  color:black;
+  color:white;
 }
 .list-group li:nth-child(5):after {
   content: 'APPLY';

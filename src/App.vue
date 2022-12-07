@@ -25,8 +25,9 @@ export default {
 @import 'bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 @import './assets/scssVariables.scss';
-html{
+*{
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
 }
 img{
   max-width: 100%;
@@ -44,6 +45,20 @@ img{
   padding-bottom: .5rem;
   padding-left: .9rem;
   padding-right: .9rem;
+  border-radius: 50px;
+}
+.btn-blue{
+  background-color: $science-blue;
+  border: 1px solid $science-blue;
+  color: white!important;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: .8rem;
+  padding-right: .8rem;
   border-radius: 50px;
 }
 </style>

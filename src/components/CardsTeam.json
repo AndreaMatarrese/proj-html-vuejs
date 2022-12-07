@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "fa-solid fa-road",
+        "title": "Establish Goals",
+        "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo totam quod sint quam maxime, molestiae facere quibusdam."
+    },
+    {
+        "icon": "fa-solid fa-video",
+        "title": "Work With a Team",
+        "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo totam quod sint quam maxime, molestiae facere quibusdam."
+    },
+    {
+        "icon": "fa-solid fa-droplet",
+        "title": "Get Results",
+        "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo totam quod sint quam maxime, molestiae facere quibusdam."
+    }
+]
