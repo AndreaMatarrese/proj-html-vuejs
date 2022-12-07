@@ -1,0 +1,26 @@
+[
+    {
+        "icon": "fa-solid fa-g",
+        "title": "Google SEO",
+        "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo totam quod sint quam maxime, molestiae facere quibusdam.",
+        "more": "#"
+    },
+    {
+        "icon": "fa-solid fa-gear",
+        "title": "Brand strategy",
+        "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo totam quod sint quam maxime, molestiae facere quibusdam.",
+        "more": "#"
+    },
+    {
+        "icon": "fa-solid fa-building",
+        "title": "Local SEO",
+        "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo totam quod sint quam maxime, molestiae facere quibusdam.",
+        "more": "#"
+    },
+    {
+        "icon": "fa-solid fa-chart-column",
+        "title": "SEO analysis",
+        "body": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo totam quod sint quam maxime, molestiae facere quibusdam.",
+        "more": "#"
+    }
+]

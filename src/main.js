@@ -7,6 +7,7 @@ import {
   faVideo,
   faDroplet,
   faG,
+  faChevronRight,
   // fabrands,
   faGear,
   faBuilding,
@@ -18,7 +19,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 import App from './App.vue';
 
-library.add(faRoad, faVideo, faDroplet, faG, faGear, faBuilding, faChartColumn);
+library.add(faRoad, faVideo, faDroplet, faG, faChevronRight, faGear, faBuilding, faChartColumn);
 //  faGoogle, mi da errore di prefisso
 Vue.config.productionTip = false;
 Vue.component('font-awesome-icon', FontAwesomeIcon);

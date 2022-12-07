@@ -17,7 +17,7 @@
       </div>
     </section>
     <section class="second-section row flex-direction-column justify-content-center">
-      <div class="title col-4 m-auto text-center py-5">
+      <div class="title-2 col-4 m-auto text-center py-5">
         <h2 class="fw-bolder p-0">Meet the new agency SEO template from the avada team</h2>
         <div>Sed ut perspiciatis unde omnis iste natus error
           sit voluptatem accusatium doloremque laudantium
@@ -34,18 +34,43 @@
       <img src="@/assets/images/agency-seo-desk-front-1200x570.jpg"
       alt="desjk-seo" class="w-75">
     </section>
+    <section class="third-section text-light">
+      <div class="title-3 col-4 m-auto text-center py-5">
+        <h2 class="fw-bolder p-0 text-capitalize">See our top notch services</h2>
+        <div>Sed ut perspiciatis unde omnis iste natus error
+          sit voluptatem accusatium doloremque laudantium
+        </div>
+      </div>
+      <div class="cards-seo row justify-content-center gap-4 py-3">
+        <div class="card cardseo text-center col-2 border-0 p-2 py-3"
+        v-for="cardseo in arrSeo" :key="cardseo.icon">
+          <font-awesome-icon :icon="cardseo.icon" color="#ffa837" class="py-3 icoTeam" />
+          <h5 class="card-title fw-bolder text-capitalize">{{cardseo.title}}</h5>
+          <p class="card-body">{{cardseo.body}}</p>
+          <div class="readmore text-capitalized cursor-pointer">
+            <a :href="cardseo.more" more>Read more<font-awesome-icon
+               icon="fa-solid fa-chevron-right" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fourth-section">
+
+    </section>
 
   </div>
 </template>
 
 <script>
 import CardsTeam from './CardsTeam.json';
+import CardsSeo from './CardsSeo.json';
 
 export default {
   name: 'MainPage',
   data() {
     return {
       arrTeams: CardsTeam,
+      arrSeo: CardsSeo,
     };
   },
 };
@@ -69,5 +94,20 @@ export default {
 .icoTeam{
   font-size: 1.5rem;
 }
-
+.third-section{
+  background-image: url('@/assets/images/pattern_background.png');
+  background-size: cover;
+  background-color: $deep-cove;
+}
+.cardseo{
+  background-color:$lucky-point;
+}
+.readmore a{
+  color: $yellow-orange;
+  font-size: 1rem ;
+  text-decoration: none;
+  &:hover{
+    color: white;
+  }
+}
 </style>
