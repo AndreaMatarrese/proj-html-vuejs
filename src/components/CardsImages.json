@@ -1,0 +1,26 @@
+[
+    {
+        "url": "@/assets/images/case-study-gallery-3-1.jpg",
+        "alt": "case-study-3"
+    },
+    {
+        "url": "@/assets/images/case-study-gallery-2.jpg",
+        "alt": "case-study-2"
+    },
+    {
+        "url": "@/assets/images/case-study-gallery-1-1.jpg",
+        "alt": "case-study-1"
+    },
+    {
+        "url": "@/assets/images/case-study-gallery-4-1.jpg",
+        "alt": "case-study-4"
+    },
+    {
+        "url": "@/assets/images/case-study-gallery-5-1.jpg",
+        "alt": "case-study-5"
+    },
+    {
+        "url": "@/assets/images/case-study-gallery-6-1.jpg",
+        "alt": "case-study-6"
+    }
+]

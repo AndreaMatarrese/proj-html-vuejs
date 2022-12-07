@@ -16,7 +16,7 @@
         </div>
       </div>
     </section>
-    <section class="second-section row flex-direction-column justify-content-center">
+    <section class="second-section row flex-column align-items-center">
       <div class="title-2 col-4 m-auto text-center py-5">
         <h2 class="fw-bolder p-0">Meet the new agency SEO template from the avada team</h2>
         <div>Sed ut perspiciatis unde omnis iste natus error
@@ -34,7 +34,7 @@
       <img src="@/assets/images/agency-seo-desk-front-1200x570.jpg"
       alt="desjk-seo" class="w-75">
     </section>
-    <section class="third-section text-light">
+    <section class="third-section text-light py-5">
       <div class="title-3 col-4 m-auto text-center py-5">
         <h2 class="fw-bolder p-0 text-capitalize">See our top notch services</h2>
         <div>Sed ut perspiciatis unde omnis iste natus error
@@ -54,8 +54,44 @@
         </div>
       </div>
     </section>
-    <section class="fourth-section">
-
+    <section class="fourth-section row flex-column justify-content-center align-items-center py-2">
+      <div class="title-2 col-4 m-auto text-center py-5">
+        <h2 class="fw-bolder p-0 text-capitalize">Our work</h2>
+        <div>Sed ut perspiciatis unde omnis iste natus error
+          sit voluptatem accusatium doloremque laudantium
+        </div>
+      </div>
+      <div class="images col-8 row row-cols-3 m-auto g-3">
+        <!-- <img v-for="image in arrImgs" :key="'../../images/' + image.url"
+        :src="image.url" :alt="image.alt"> Non mi prende le immagini -->
+        <img src="../assets/images/case-study-gallery-3-1.jpg" class="col" alt="">
+        <img src="../assets/images/case-study-gallery-2.jpg" class="col" alt="">
+        <img src="../assets/images/case-study-gallery-1-1.jpg" class="col" alt="">
+        <img src="../assets/images/case-study-gallery-4-1.jpg" class="col" alt="">
+        <img src="../assets/images/case-study-gallery-5-1.jpg" class="col" alt="">
+        <img src="../assets/images/case-study-gallery-6-1.jpg" class="col" alt="">
+      </div>
+      <button class="btn-yellow col-1 my-5">View our work</button>
+    </section>
+    <section class="fifth-section text-light py-5">
+      <div class="title-3 col-4 m-auto text-center py-5">
+        <h2 class="fw-bolder p-0 text-capitalize">See our top notch services</h2>
+        <div>Sed ut perspiciatis unde omnis iste natus error
+          sit voluptatem accusatium doloremque laudantium
+        </div>
+      </div>
+      <div class="cards-seo row justify-content-center gap-4 py-3">
+        <div class="card cardseo text-center col-2 border-0 p-2 py-3"
+        v-for="cardseo in arrSeo" :key="cardseo.icon">
+          <font-awesome-icon :icon="cardseo.icon" color="#ffa837" class="py-3 icoTeam" />
+          <h5 class="card-title fw-bolder text-capitalize">{{cardseo.title}}</h5>
+          <p class="card-body">{{cardseo.body}}</p>
+          <div class="readmore text-capitalized cursor-pointer">
+            <a :href="cardseo.more" more>Read more<font-awesome-icon
+               icon="fa-solid fa-chevron-right" /></a>
+          </div>
+        </div>
+      </div>
     </section>
 
   </div>
@@ -64,6 +100,7 @@
 <script>
 import CardsTeam from './CardsTeam.json';
 import CardsSeo from './CardsSeo.json';
+import CardsImages from './CardsImages.json';
 
 export default {
   name: 'MainPage',
@@ -71,6 +108,7 @@ export default {
     return {
       arrTeams: CardsTeam,
       arrSeo: CardsSeo,
+      arrImgs: CardsImages,
     };
   },
 };
@@ -109,5 +147,8 @@ export default {
   &:hover{
     color: white;
   }
+}
+.fifth-section{
+
 }
 </style>
