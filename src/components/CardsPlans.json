@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Standard",
+        "price": "19",
+        "projects": "5 projects",
+        "storage": "5 Gb Storage",
+        "users": "Unlimited Users"
+    },
+    {
+        "title": "Premium",
+        "price": "29",
+        "projects": "10 projects",
+        "storage": "15 Gb Storage",
+        "users": "Unlimited Users"
+    },
+    {
+        "title": "Professional",
+        "price": "39",
+        "projects": "15 projects",
+        "storage": "30 Gb Storage",
+        "users": "Unlimited Users"
+    },
+    {
+        "title": "Extreme",
+        "price": "59",
+        "projects": "Unlimited projects",
+        "storage": "Unlimited Storage",
+        "users": "Unlimited Users"
+    }   
+]

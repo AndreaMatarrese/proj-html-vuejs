@@ -75,23 +75,30 @@
     </section>
     <section class="fifth-section text-light py-5">
       <div class="title-3 col-4 m-auto text-center py-5">
-        <h2 class="fw-bolder p-0 text-capitalize">See our top notch services</h2>
+        <h2 class="fw-bolder p-0 text-capitalize">Our plans</h2>
         <div>Sed ut perspiciatis unde omnis iste natus error
           sit voluptatem accusatium doloremque laudantium
         </div>
       </div>
-      <div class="cards-seo row justify-content-center gap-4 py-3">
-        <div class="card cardseo text-center col-2 border-0 p-2 py-3"
-        v-for="cardseo in arrSeo" :key="cardseo.icon">
-          <font-awesome-icon :icon="cardseo.icon" color="#ffa837" class="py-3 icoTeam" />
-          <h5 class="card-title fw-bolder text-capitalize">{{cardseo.title}}</h5>
-          <p class="card-body">{{cardseo.body}}</p>
-          <div class="readmore text-capitalized cursor-pointer">
-            <a :href="cardseo.more" more>Read more<font-awesome-icon
-               icon="fa-solid fa-chevron-right" /></a>
-          </div>
+      <div class="cards-seo col-12 m-auto row justify-content-center gap-3 py-3">
+        <plans-cards class="card cardplans text-center col-2 border-0
+        rounded-0 shadow p-3 mb-5 p-2 py-3 text-dark"
+        v-for="cardplans in arrPlans" :key="cardplans"
+        :planscard="cardplans">
+        </plans-cards>
+      </div>
+    </section>
+    <section class="sixth-section row flex-column align-items-center justify-content-center">
+     <div class="col-8 row flex-column alig-items-center justify content-center">
+      <div class="title-2 col-5 m-auto text-center py-5">
+        <h2 class="fw-bolder p-0 text-capitalize">Our news</h2>
+        <div>Sed ut perspiciatis unde omnis iste natus error
+          sit voluptatem accusatium doloremque laudantium
         </div>
       </div>
+      <our-news></our-news>
+      <button class="btn-yellow col-2 my-5 m-auto">View our work</button>
+     </div>
     </section>
 
   </div>
@@ -101,14 +108,22 @@
 import CardsTeam from './CardsTeam.json';
 import CardsSeo from './CardsSeo.json';
 import CardsImages from './CardsImages.json';
+import CardsPlans from './CardsPlans.json';
+import PlansCards from './PlansCards.vue';
+import OurNews from './OurNews.vue';
 
 export default {
+  components: {
+    PlansCards,
+    OurNews,
+  },
   name: 'MainPage',
   data() {
     return {
       arrTeams: CardsTeam,
       arrSeo: CardsSeo,
       arrImgs: CardsImages,
+      arrPlans: CardsPlans,
     };
   },
 };
@@ -149,6 +164,6 @@ export default {
   }
 }
 .fifth-section{
-
+  background-image: url('@/assets/images/background1.jpg');
 }
 </style>
