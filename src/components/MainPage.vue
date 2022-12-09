@@ -121,7 +121,9 @@
     <section class="seventh-section py-5">
       <div class="col-8 row flex-column alig-items-center justify content-center m-auto">
         <h2 class="texr-capitalize text-center">What our client say</h2>
-        <div class="slider col-10 m-auto mb-5 border-bottom"></div>
+        <div class="slider col-10 m-auto mb-5 border-bottom py-5">
+          <carousel-review></carousel-review>
+        </div>
         <div class="logo col-9 row row-cols-4 m-auto justify-content-between">
           <img src="@/assets/images/clients_partner_5-200x202.png" alt="partner-5"
           class="col-2">
@@ -156,11 +158,13 @@ import CardsPlans from './CardsPlans.json';
 import PlansCards from './PlansCards.vue';
 import OurNews from './OurNews.vue';
 import CardsReview from './CardsReview.json';
+import CarouselReview from './CarouselReview.vue';
 
 export default {
   components: {
     PlansCards,
     OurNews,
+    CarouselReview,
   },
   name: 'MainPage',
   data() {
