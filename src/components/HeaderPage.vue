@@ -1,11 +1,12 @@
 <template>
-  <div class="navbar position-fixed fixed-top">
+  <div class="navbar position-fixed fixed-top menu">
     <div class="navbar-main bg-transparent col-8 row row-cols-2
                 justify-content-between align-items-center
                 m-auto">
       <img src="@/assets/images/logo_seo_w_2x.png" class="col-2" alt="logo-seo">
-      <div class="menu-voice col-9 row">
-        <ul class="list-group list-group-horizontal list-unstyled gap-3 align-items-center">
+      <div class="menu-voice col-9 row justify-content-end">
+        <ul class="list-group list-group-horizontal list-unstyled
+        gap-3 align-items-center justify-content-end">
           <li v-for="item in arrMenu" :key="item.text">
           <a v-if="item.type == 'link'" :href="item.link">{{item.text}}</a>
           <!-- <a v-else>{{}}</a> -->
@@ -51,5 +52,8 @@ a{
   padding: .3rem;
   border-radius: 5px;
   margin-left: 5px;
+}
+.menu{
+  background-color: rgba(0, 0, 0, 0.149);
 }
 </style>

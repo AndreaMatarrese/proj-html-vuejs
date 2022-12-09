@@ -2,18 +2,16 @@
   <div class="containter-fluid">
     <!-- first section -->
     <section class="first-section">
-      <div class="row col-8 m-auto">
-        <div class="text col-6">
+      <div class="row col-md-8 m-auto">
+        <div class="text col-md-6">
           <h2 class="fw-bold display-6">SEM Campaigns Made Simple With Avada</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
             Phasellus eu ornare erat. Curabitur pulvinar elit.
            </p>
-          <div class="row col-11">
-            <button class="btn-yellow col-4">Buy avada now</button>
-            <button class="btn-blue col-4 ms-3">Contact us</button>
+          <div class="row col-md-11">
+            <button class="btn-yellow col-md-4">Buy avada now</button>
+            <button class="btn-blue col-md-4 ms-3">Contact us</button>
           </div>
-        </div>
-        <div class="rx col-8">
         </div>
       </div>
     </section>
