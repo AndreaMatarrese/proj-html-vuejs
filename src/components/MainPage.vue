@@ -1,5 +1,6 @@
 <template>
   <div class="containter-fluid">
+    <!-- first section -->
     <section class="first-section ">
       <div class="row col-10 m-auto">
         <div class="text col-5">
@@ -16,6 +17,7 @@
         </div>
       </div>
     </section>
+    <!-- second section -->
     <section class="second-section row flex-column align-items-center">
       <div class="title-2 col-4 m-auto text-center py-5">
         <h2 class="fw-bolder p-0">Meet the new agency SEO template from the avada team</h2>
@@ -34,6 +36,7 @@
       <img src="@/assets/images/agency-seo-desk-front-1200x570.jpg"
       alt="desjk-seo" class="w-75">
     </section>
+    <!-- third section -->
     <section class="third-section text-light py-5">
       <div class="title-3 col-4 m-auto text-center py-5">
         <h2 class="fw-bolder p-0 text-capitalize">See our top notch services</h2>
@@ -54,6 +57,7 @@
         </div>
       </div>
     </section>
+    <!-- fourth section -->
     <section class="fourth-section row flex-column justify-content-center align-items-center py-2">
       <div class="title-2 col-4 m-auto text-center py-5">
         <h2 class="fw-bolder p-0 text-capitalize">Our work</h2>
@@ -73,6 +77,7 @@
       </div>
       <button class="btn-yellow col-1 my-5">View our work</button>
     </section>
+    <!-- fifth section -->
     <section class="fifth-section text-light py-5">
       <div class="title-3 col-4 m-auto text-center py-5">
         <h2 class="fw-bolder p-0 text-capitalize">Our plans</h2>
@@ -88,6 +93,7 @@
         </plans-cards>
       </div>
     </section>
+    <!-- sixth section -->
     <section class="sixth-section row flex-column align-items-center justify-content-center">
      <div class="col-8 row flex-column alig-items-center justify content-center">
       <div class="title-2 col-5 m-auto text-center py-5">
@@ -100,6 +106,7 @@
       <button class="btn-yellow col-2 my-5 m-auto">View our work</button>
      </div>
     </section>
+    <!-- seventh section -->
     <section class="seventh-section">
       <h2 class="texr-capitalize text-center">What our client say</h2>
       <div class="slider col-10 m-auto mb-5 border-bottom"></div>
@@ -114,6 +121,7 @@
         class="col-1 m-auto">
       </div>
     </section>
+    <!-- eight section -->
     <section class="eighth-section text-light">
       <div class="title-3 col-4 m-auto text-center ">
         <h2 class="fw-bolder p-0 text-capitalize">Start your free consultation</h2>
@@ -193,7 +201,6 @@ export default {
 }
 .eighth-section{
   padding: 10rem 0;
-  background-position: center;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.604);
   background-image: url('@/assets/images/case-study-gallery-3-1-1200x900.jpg');
