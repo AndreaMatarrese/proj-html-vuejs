@@ -7,31 +7,31 @@
     {
         "text": "Who we are",
         "type": "link",
-        "link": "#"
+        "link": "#we"
     },
     {
         "text": "What we do",
         "type": "link",
-        "link": "#"
+        "link": "#services"
     },
     {
         "text": "Where we work",
         "type": "link",
-        "link": "#"
+        "link": "#work"
     },
     {
         "text": "Careers",
         "type": "link",
-        "link": "#"
+        "link": "#plans"
     },
     {
         "text": "News",
         "type": "link",
-        "link": "#"
+        "link": "#news"
     },
     {
         "text": "Get in touch",
         "type": "button",
-        "link": "#"
+        "link": "#footer"
     }
 ]

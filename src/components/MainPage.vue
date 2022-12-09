@@ -1,9 +1,9 @@
 <template>
   <div class="containter-fluid">
     <!-- first section -->
-    <section class="first-section ">
-      <div class="row col-10 m-auto">
-        <div class="text col-5">
+    <section class="first-section">
+      <div class="row col-8 m-auto">
+        <div class="text col-6">
           <h2 class="fw-bold display-6">SEM Campaigns Made Simple With Avada</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
             Phasellus eu ornare erat. Curabitur pulvinar elit.
@@ -18,107 +18,120 @@
       </div>
     </section>
     <!-- second section -->
-    <section class="second-section row flex-column align-items-center">
-      <div class="title-2 col-4 m-auto text-center py-5">
-        <h2 class="fw-bolder p-0">Meet the new agency SEO template from the avada team</h2>
-        <div>Sed ut perspiciatis unde omnis iste natus error
-          sit voluptatem accusatium doloremque laudantium
+    <section class="second-section row flex-column align-items-center" id="we">
+      <div class="col-8 row flex-column justify-content-center align-items-center">
+        <div class="title-2 col-6 m-auto text-center py-5">
+          <h2 class="fw-bolder p-0 text-capitalize">Meet the new agency SEO template
+          from the avada team</h2>
+          <div>Sed ut perspiciatis unde omnis iste natus error
+            sit voluptatem accusatium doloremque laudantium
+          </div>
         </div>
-      </div>
-      <div class="cards-team row justify-content-center gap-4 py-3">
-        <div class="card text-center col-3 border-0"
-        v-for="cards in arrTeams" :key="cards.icon">
-          <font-awesome-icon :icon="cards.icon" color="#ffa837" class="py-3 icoTeam" />
-          <h5 class="card-title fw-bolder">{{cards.title}}</h5>
-          <p class="card-body">{{cards.body}}</p>
+        <div class="card-group cards-team col-12 m-auto row justify-content-center gap-3 py-3">
+          <div class="card text-center col-4 border-0"
+          v-for="cards in arrTeams" :key="cards.icon">
+            <font-awesome-icon :icon="cards.icon" color="#ffa837" class="py-3 icoTeam card-img" />
+            <h5 class="card-title fw-bolder">{{cards.title}}</h5>
+            <p class="card-body">{{cards.body}}</p>
+          </div>
         </div>
+        <img src="@/assets/images/agency-seo-desk-front-1200x570.jpg"
+        alt="desjk-seo" class="w-75 m-auto">
       </div>
-      <img src="@/assets/images/agency-seo-desk-front-1200x570.jpg"
-      alt="desjk-seo" class="w-75">
     </section>
     <!-- third section -->
-    <section class="third-section text-light py-5">
-      <div class="title-3 col-4 m-auto text-center py-5">
-        <h2 class="fw-bolder p-0 text-capitalize">See our top notch services</h2>
-        <div>Sed ut perspiciatis unde omnis iste natus error
-          sit voluptatem accusatium doloremque laudantium
+    <section class="third-section text-light py-5" id="services">
+      <div class="col-8 row flex-column align-item-center m-auto">
+        <div class="title-3 col-6 m-auto text-center py-5">
+          <h2 class="fw-bolder p-0 text-capitalize">See our top notch services</h2>
+          <div>Sed ut perspiciatis unde omnis iste natus error
+            sit voluptatem accusatium doloremque laudantium
+          </div>
         </div>
-      </div>
-      <div class="cards-seo row justify-content-center gap-4 py-3">
-        <div class="card cardseo text-center col-2 border-0 p-2 py-3"
-        v-for="cardseo in arrSeo" :key="cardseo.icon">
-          <font-awesome-icon :icon="cardseo.icon" color="#ffa837" class="py-3 icoTeam" />
-          <h5 class="card-title fw-bolder text-capitalize">{{cardseo.title}}</h5>
-          <p class="card-body">{{cardseo.body}}</p>
-          <div class="readmore text-capitalized cursor-pointer">
-            <a :href="cardseo.more" more>Read more<font-awesome-icon
-               icon="fa-solid fa-chevron-right" /></a>
+        <div class="cards-seo card-group col-12 row justify-content-center gap-4 py-3">
+          <div class="card cardseo text-center col-3 border-0 p-2 py-3"
+          v-for="cardseo in arrSeo" :key="cardseo.icon">
+            <font-awesome-icon :icon="cardseo.icon" color="#ffa837" class="py-3 icoTeam" />
+            <h5 class="card-title fw-bolder text-capitalize">{{cardseo.title}}</h5>
+            <p class="card-body">{{cardseo.body}}</p>
+            <div class="readmore text-capitalized cursor-pointer">
+              <a :href="cardseo.more" more>Read more<font-awesome-icon
+                icon="fa-solid fa-chevron-right" /></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- fourth section -->
-    <section class="fourth-section row flex-column justify-content-center align-items-center py-2">
-      <div class="title-2 col-4 m-auto text-center py-5">
-        <h2 class="fw-bolder p-0 text-capitalize">Our work</h2>
-        <div>Sed ut perspiciatis unde omnis iste natus error
-          sit voluptatem accusatium doloremque laudantium
+    <section class="fourth-section row flex-column justify-content-center align-items-center py-2"
+    id="work">
+      <div class="col-10 row flex-column align-item-center m-auto">
+        <div class="title-2 col-4 m-auto text-center py-5">
+          <h2 class="fw-bolder p-0 text-capitalize">Our work</h2>
+          <div>Sed ut perspiciatis unde omnis iste natus error
+            sit voluptatem accusatium doloremque laudantium
+          </div>
         </div>
+        <div class="images col-10 row row-cols-3 m-auto g-3">
+          <!-- <img v-for="image in arrImgs" :key="'../../images/' + image.url"
+          :src="image.url" :alt="image.alt"> Non mi prende le immagini -->
+          <img src="../assets/images/case-study-gallery-3-1.jpg" class="col" alt="">
+          <img src="../assets/images/case-study-gallery-2.jpg" class="col" alt="">
+          <img src="../assets/images/case-study-gallery-1-1.jpg" class="col" alt="">
+          <img src="../assets/images/case-study-gallery-4-1.jpg" class="col" alt="">
+          <img src="../assets/images/case-study-gallery-5-1.jpg" class="col" alt="">
+          <img src="../assets/images/case-study-gallery-6-1.jpg" class="col" alt="">
+        </div>
+        <button class="btn-yellow col-2 m-auto my-5">View our work</button>
       </div>
-      <div class="images col-8 row row-cols-3 m-auto g-3">
-        <!-- <img v-for="image in arrImgs" :key="'../../images/' + image.url"
-        :src="image.url" :alt="image.alt"> Non mi prende le immagini -->
-        <img src="../assets/images/case-study-gallery-3-1.jpg" class="col" alt="">
-        <img src="../assets/images/case-study-gallery-2.jpg" class="col" alt="">
-        <img src="../assets/images/case-study-gallery-1-1.jpg" class="col" alt="">
-        <img src="../assets/images/case-study-gallery-4-1.jpg" class="col" alt="">
-        <img src="../assets/images/case-study-gallery-5-1.jpg" class="col" alt="">
-        <img src="../assets/images/case-study-gallery-6-1.jpg" class="col" alt="">
-      </div>
-      <button class="btn-yellow col-1 my-5">View our work</button>
     </section>
     <!-- fifth section -->
-    <section class="fifth-section text-light py-5">
-      <div class="title-3 col-4 m-auto text-center py-5">
-        <h2 class="fw-bolder p-0 text-capitalize">Our plans</h2>
-        <div>Sed ut perspiciatis unde omnis iste natus error
-          sit voluptatem accusatium doloremque laudantium
+    <section class="fifth-section text-light py-5" id="plans">
+      <div class="col-8 row flex-column justify-content-center align-items-center m-auto">
+        <div class="title-3 col-6 m-auto text-center py-5">
+          <h2 class="fw-bolder p-0 text-capitalize">Our plans</h2>
+          <div>Sed ut perspiciatis unde omnis iste natus error
+            sit voluptatem accusatium doloremque laudantium
+          </div>
         </div>
-      </div>
-      <div class="cards-seo col-12 m-auto row justify-content-center gap-3 py-3">
-        <plans-cards class="card cardplans text-center col-2 border-0
-        rounded-0 shadow p-3 mb-5 p-2 py-3 text-dark"
-        v-for="cardplans in arrPlans" :key="cardplans"
-        :planscard="cardplans">
-        </plans-cards>
+        <div class="cards-seo card-group col-12 row gap-3 py-3">
+          <plans-cards class="card cardplans text-center col-3 border-0
+          rounded-0 shadow p-5 mb-5 p-2 py-5 text-dark"
+          v-for="cardplans in arrPlans" :key="cardplans"
+          :planscard="cardplans">
+          </plans-cards>
+        </div>
       </div>
     </section>
     <!-- sixth section -->
-    <section class="sixth-section row flex-column align-items-center justify-content-center">
+    <section class="sixth-section row flex-column align-items-center justify-content-center"
+     id="news">
      <div class="col-8 row flex-column alig-items-center justify content-center">
       <div class="title-2 col-5 m-auto text-center py-5">
         <h2 class="fw-bolder p-0 text-capitalize">Our news</h2>
         <div>Sed ut perspiciatis unde omnis iste natus error
           sit voluptatem accusatium doloremque laudantium
         </div>
-      </div>
-      <our-news></our-news>
-      <button class="btn-yellow col-2 my-5 m-auto">View our work</button>
+        </div>
+        <our-news></our-news>
+        <button class="btn-yellow col-2 my-5 m-auto">View our work</button>
      </div>
     </section>
     <!-- seventh section -->
-    <section class="seventh-section">
-      <h2 class="texr-capitalize text-center">What our client say</h2>
-      <div class="slider col-10 m-auto mb-5 border-bottom"></div>
-      <div class="logos col-10 row row-cols-4 m-auto">
-        <img src="@/assets/images/clients_partner_5-200x202.png" alt="partner-5"
-        class="col-1 m-auto">
-        <img src="@/assets/images/clients_partner_6-200x202.png" alt="partner-6"
-        class="col-1 m-auto">
-        <img src="@/assets/images/clients_partner_1-200x202.png" alt="partner-1"
-        class="col-1 m-auto">
-        <img src="@/assets/images/clients_partner_2-200x202.png" alt="partner-2"
-        class="col-1 m-auto">
+    <section class="seventh-section py-5">
+      <div class="col-8 row flex-column alig-items-center justify content-center m-auto">
+        <h2 class="texr-capitalize text-center">What our client say</h2>
+        <div class="slider col-10 m-auto mb-5 border-bottom"></div>
+        <div class="logo col-9 row row-cols-4 m-auto justify-content-between">
+          <img src="@/assets/images/clients_partner_5-200x202.png" alt="partner-5"
+          class="col-2">
+          <img src="@/assets/images/clients_partner_6-200x202.png" alt="partner-6"
+          class="col-2">
+          <img src="@/assets/images/clients_partner_1-200x202.png" alt="partner-1"
+          class="col-2">
+          <img src="@/assets/images/clients_partner_2-200x202.png" alt="partner-2"
+          class="col-2">
+        </div>
       </div>
     </section>
     <!-- eight section -->

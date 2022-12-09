@@ -46,11 +46,17 @@ img{
   padding-left: .9rem;
   padding-right: .9rem;
   border-radius: 50px;
+  box-shadow: 0px 2px 3px #888888;
+  &:hover{
+    background-color: $alabaster;
+    border: 1px solid $black;
+    color: black!important;
+  }
 }
 .btn-blue{
   background-color: $science-blue;
   border: 1px solid $science-blue;
-  color: white!important;
+  color: white;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: .05rem;
@@ -60,5 +66,31 @@ img{
   padding-left: .8rem;
   padding-right: .8rem;
   border-radius: 50px;
+  box-shadow: 0px 2px 3px #888888;
+  &:hover{
+    background-color: $white;
+    border: 1px solid $science-blue;
+    color: $science-blue;
+  }
+}
+.btn-white{
+  background-color: #f6f6f6;
+  border: 1px solid black;
+  color: black;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: .9rem;
+  padding-right: .9rem;
+  border-radius: 50px;
+  box-shadow: 0px 2px 3px #888888;
+  &:hover{
+    background-color: $yellow-orange;
+    border: 1px solid $yellow-orange;
+    color: white;
+  }
 }
 </style>
