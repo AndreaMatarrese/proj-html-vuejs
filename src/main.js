@@ -12,6 +12,10 @@ import {
   faGear,
   faBuilding,
   faChartColumn,
+  // faFacebook,
+  // faInstagram,
+  // faTwitter,
+  // faYoutube,
 }
   from '@fortawesome/free-solid-svg-icons';
 
@@ -19,7 +23,20 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 import App from './App.vue';
 
-library.add(faRoad, faVideo, faDroplet, faG, faChevronRight, faGear, faBuilding, faChartColumn);
+library.add(
+  faRoad,
+  faVideo,
+  faDroplet,
+  faG,
+  faChevronRight,
+  faGear,
+  faBuilding,
+  faChartColumn,
+  // faFacebook,
+  // faInstagram,
+  // faTwitter,
+  // faYoutube,
+);
 //  faGoogle, mi da errore di prefisso
 Vue.config.productionTip = false;
 Vue.component('font-awesome-icon', FontAwesomeIcon);

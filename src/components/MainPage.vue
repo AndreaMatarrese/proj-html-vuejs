@@ -100,6 +100,29 @@
       <button class="btn-yellow col-2 my-5 m-auto">View our work</button>
      </div>
     </section>
+    <section class="seventh-section">
+      <h2 class="texr-capitalize text-center">What our client say</h2>
+      <div class="slider col-10 m-auto mb-5 border-bottom"></div>
+      <div class="logos col-10 row row-cols-4 m-auto">
+        <img src="@/assets/images/clients_partner_5-200x202.png" alt="partner-5"
+        class="col-1 m-auto">
+        <img src="@/assets/images/clients_partner_6-200x202.png" alt="partner-6"
+        class="col-1 m-auto">
+        <img src="@/assets/images/clients_partner_1-200x202.png" alt="partner-1"
+        class="col-1 m-auto">
+        <img src="@/assets/images/clients_partner_2-200x202.png" alt="partner-2"
+        class="col-1 m-auto">
+      </div>
+    </section>
+    <section class="eighth-section text-light">
+      <div class="title-3 col-4 m-auto text-center ">
+        <h2 class="fw-bolder p-0 text-capitalize">Start your free consultation</h2>
+        <div class="py-4">Sed ut perspiciatis unde omnis iste natus error
+          sit voluptatem accusatium doloremque laudantium
+        </div>
+        <button class="btn-yellow">Contact us now</button>
+      </div>
+    </section>
 
   </div>
 </template>
@@ -111,6 +134,7 @@ import CardsImages from './CardsImages.json';
 import CardsPlans from './CardsPlans.json';
 import PlansCards from './PlansCards.vue';
 import OurNews from './OurNews.vue';
+import CardsReview from './CardsReview.json';
 
 export default {
   components: {
@@ -124,6 +148,7 @@ export default {
       arrSeo: CardsSeo,
       arrImgs: CardsImages,
       arrPlans: CardsPlans,
+      arrReview: CardsReview,
     };
   },
 };
@@ -165,5 +190,14 @@ export default {
 }
 .fifth-section{
   background-image: url('@/assets/images/background1.jpg');
+}
+.eighth-section{
+  padding: 10rem 0;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.604);
+  background-image: url('@/assets/images/case-study-gallery-3-1-1200x900.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>

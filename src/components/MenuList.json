@@ -28,5 +28,10 @@
         "text": "News",
         "type": "link",
         "link": "#"
+    },
+    {
+        "text": "Get in touch",
+        "type": "button",
+        "link": "#"
     }
 ]

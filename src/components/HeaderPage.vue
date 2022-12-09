@@ -7,7 +7,8 @@
       <div class="menu-voice col-8 row">
         <ul class="list-group list-group-horizontal list-unstyled gap-3 align-items-center">
           <li v-for="item in arrMenu" :key="item.text">
-          <a :href="item.link">{{item.text}}</a>
+          <a v-if="item.type == 'link'" :href="item.link">{{item.text}}</a>
+          <!-- <a v-else>{{}}</a> -->
           </li>
           <button class="btn-yellow align-self-center">Get in touch now</button>
         </ul>
@@ -36,7 +37,13 @@ a{
   text-decoration: none;
   color:white;
 }
-.list-group li:nth-child(5):after {
+.menu-voice li:first-child a{
+  color: $yellow-orange;
+}
+.menu-voice a:hover{
+  color: $yellow-orange;
+}
+.menu-voice .list-group li:nth-child(5):after {
   content: 'APPLY';
   font-size: 12px;
   border: 1px solid $yellow-orange;
