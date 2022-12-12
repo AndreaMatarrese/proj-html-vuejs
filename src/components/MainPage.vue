@@ -1,7 +1,7 @@
 <template>
   <div class="containter-fluid">
     <!-- first section -->
-    <section class="first-section">
+    <section class="first-section sez1">
       <div class="row col-md-8 m-auto">
         <div class="text col-md-6">
           <h2 class="fw-bold display-6">SEM Campaigns Made Simple With Avada</h2>
